@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Libs">
+      <UniqueIdentifier>{be961a6f-7aca-406a-a4d8-02c8717da5e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{fc57c1b7-233a-47cb-82bc-ed3d247fd4e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{6afdf2fe-669c-446a-9192-ebc1be702b1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\Security">
+      <UniqueIdentifier>{521ffbf1-cdfd-412c-8e6e-2c7775490679}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\Config">
+      <UniqueIdentifier>{2affaad4-f461-4eb4-99d0-296b2a7a757d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks">
+      <UniqueIdentifier>{55d1ccc6-db1b-453e-b2d3-f9097bd70a8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\CrashHandler">
+      <UniqueIdentifier>{263230c3-a599-42b3-8079-49a547a6cd28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\Log">
+      <UniqueIdentifier>{1fe6aeeb-2788-4629-9f9e-a8f6759057bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\WinTrust">
+      <UniqueIdentifier>{a26e45d5-5ee8-4ad0-ba1a-79d602fdfea7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\Notifier">
+      <UniqueIdentifier>{544ac9f3-ff90-42e7-adb6-f3b986b18d18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\Http">
+      <UniqueIdentifier>{3e0bbac8-9c02-4d13-9387-e1598215579a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\String">
+      <UniqueIdentifier>{2d8dc25e-5db0-4647-b4a1-aaeb416ba667}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\dllmain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\detver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\Winhook.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hookdefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sigscanner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rbxFunc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D3D11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RichPresence.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="verify.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\detours.h">
+      <Filter>Libs</Filter>
+    </ClInclude>
+    <ClInclude Include="inicpp.h">
+      <Filter>Libs</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\syelog.h">
+      <Filter>Libs</Filter>
+    </ClInclude>
+    <ClInclude Include="Zydis.h">
+      <Filter>Libs</Filter>
+    </ClInclude>
+    <ClInclude Include="Memcheck.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="safetyhook.hpp">
+      <Filter>Libs</Filter>
+    </ClInclude>
+    <ClInclude Include="Keyboard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Init.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RobloxHooks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Watermark.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Notifier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Http.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcessChecker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_dx11.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_dx12.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_win32.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_internal.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_stdlib.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_rectpack.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_textedit.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_truetype.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imconfig.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="Format.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskDialog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Offsets.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooks\Lua.h">
+      <Filter>Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooks\RobloxHooks.h">
+      <Filter>Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooks\GameConfigurer.h">
+      <Filter>Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\WinTrust\verify.h">
+      <Filter>Utilities\WinTrust</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Security\ProcessChecker.h">
+      <Filter>Utilities\Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Security\Security.h">
+      <Filter>Utilities\Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Security\Memcheck.h">
+      <Filter>Utilities\Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\CrashHandler\CrashHandler.h">
+      <Filter>Utilities\CrashHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Config\Config.h">
+      <Filter>Utilities\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Log\RAGEDebugger.h">
+      <Filter>Utilities\Log</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Notifier\TaskDialog.h">
+      <Filter>Utilities\Notifier</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Notifier\Notifier.h">
+      <Filter>Utilities\Notifier</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\Http\Http.h">
+      <Filter>Utilities\Http</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities\String\Format.h">
+      <Filter>Utilities\String</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Winhook.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sigscanner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D3D11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RichPresence.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="hookdefs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="procinfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="safetyhook.cpp">
+      <Filter>Libs</Filter>
+    </ClCompile>
+    <ClCompile Include="Zydis.c">
+      <Filter>Libs</Filter>
+    </ClCompile>
+    <ClCompile Include="Init.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wintoastlib.cpp">
+      <Filter>Libs</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_demo.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_draw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_dx11.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_dx12.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_win32.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_stdlib.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_tables.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_widgets.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Hooks\Lua.cpp">
+      <Filter>Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="Hooks\RobloxHooks.cpp">
+      <Filter>Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="Hooks\GameConfigurer.cpp">
+      <Filter>Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\WinTrust\verify.cpp">
+      <Filter>Utilities\WinTrust</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\Security\Security.cpp">
+      <Filter>Utilities\Security</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\Security\Heartbeat.cpp">
+      <Filter>Utilities\Security</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\Security\Memcheck.cpp">
+      <Filter>Utilities\Security</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\Security\ProcessChecker.cpp">
+      <Filter>Utilities\Security</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\CrashHandler\CrashHandler.cpp">
+      <Filter>Utilities\CrashHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\Config\Config.cpp">
+      <Filter>Utilities\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\Notifier\TaskDialog.cpp">
+      <Filter>Utilities\Notifier</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\Notifier\Notifier.cpp">
+      <Filter>Utilities\Notifier</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\Http\Http.cpp">
+      <Filter>Utilities\Http</Filter>
+    </ClCompile>
+    <ClCompile Include="Utilities\String\Format.cpp">
+      <Filter>Utilities\String</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,2 @@
+void CheckForBlacklistedProcess();
+void StartProcessCheckerThread();
