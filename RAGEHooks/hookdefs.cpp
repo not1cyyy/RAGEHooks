@@ -19,8 +19,8 @@ FARPROC myGetProcAddress(HMODULE hModule, LPCSTR lpProcName) {
         }
     }
 
-    return NULL;
     VMProtectEnd();
+    return NULL;
 }
 
 HMODULE h_Comctl32 = LoadLibraryW(VMProtectDecryptStringW(L"comctl32.dll"));

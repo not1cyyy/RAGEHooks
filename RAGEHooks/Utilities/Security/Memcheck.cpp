@@ -27,8 +27,8 @@ int GetModules()
             }
         }
     }
-    return 0;
     VMProtectEnd();
+    return 0;
 }
 
 void GetWhitelistedModules()
