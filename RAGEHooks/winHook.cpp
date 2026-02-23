@@ -96,8 +96,8 @@ HMODULE WINAPI LoadLibraryWHook(LPCWSTR lpLibFileName)
     WCHAR fullPath[MAX_PATH] = { 0 };
     DWORD result = SearchPathW(NULL, lpLibFileName, NULL, MAX_PATH, fullPath, NULL);
     std::wstring fullPathStr(fullPath);
-    if (result == 0) 
-        wcscpy(fullPath, fullPathStr.c_str());
+    if (result == 0)
+        wcscpy(fullPath, lpLibFileName);
     
 
     std::ranges::transform(fullPathStr, fullPathStr.begin(), [](wchar_t c) { return std::tolower(c); });
