@@ -21,3 +21,5 @@ Before building, make sure you have the following installed:
 2. Select the **configuration**: `Release | x86`
 3. Build the `RAGEHooks` project.
 4. Thats it! The compiled DLL will be ready in your output directory.
+
+Forked from KoroneX
