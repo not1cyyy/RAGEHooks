@@ -3,7 +3,7 @@
 
 namespace RAGESecurity
 {
-	bool g_isSet = false;
+	std::atomic<bool> g_isSet = false;
 	HMODULE g_robloxModule = GetModuleHandle(nullptr);
 	MODULEINFO g_robloxModInfo;
 	void* g_robloxBase;
