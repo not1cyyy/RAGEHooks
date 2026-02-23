@@ -9,7 +9,7 @@
 #include "Lua.h"
 #include "GameConfigurer.h"
 
-bool g_printDone = false;
+std::atomic<bool> g_printDone = false;
 std::string g_joinMessage;
 
 extern ServerInfo serverInfo = { false, "", "" };
@@ -90,6 +90,7 @@ void StartRobloxHooks()
 	DetourTransactionBegin();
 	DetourUpdateThread(GetCurrentThread());
 	DetourAttach(&(PVOID&)Offsets::verifySignatureBase64, verifySignatureBase64Hook);
-	DetourAttach(&(PVOID&)Offsets::collectMd5Hash, CollectMd5HashHook);
+	// collectMd5Hash is already hooked via SafetyHook above; attaching with Detours
+	// a second time would corrupt the trampoline chain.
 	DetourTransactionCommit();
 }
