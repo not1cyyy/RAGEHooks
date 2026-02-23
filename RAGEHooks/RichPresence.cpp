@@ -39,16 +39,25 @@ void UpdateWithPlace() {
         int maxPlayers = jsonData.value("MaxPlayers", 0);
         int currentPlayers = jsonData.value("CurrentPlayers", 0);
 
-        std::string partyId = jsonData.value("PartyId", "");
-		std::string smallText = jsonData.value("Username", "") + " " + "(" + uid + ")";
-        std::string stateText = "Playing " + std::to_string(jsonData.value("Year", 0));
-        std::string detailsText = jsonData.value("Name", "");
-        //links
-        std::string userHeadshot = BaseUrl + "/Thumbs/Avatar-Headshot.ashx?userId=" + uid;
+        static std::string partyId;
+        static std::string smallText;
+        static std::string stateText;
+        static std::string detailsText;
+        static std::string userHeadshot;
+        static std::string joinGame;
+        static std::string gameIcon;
+        static std::string gamePage;
 
-        std::string joinGame = BaseUrl + "/joinserver?jobId=" + serverInfo.jobId + "&placeId=" + pid;
-        std::string gameIcon = BaseUrl + "Thumbs/GameIcon.ashx?assetId=" + pid;
-        std::string gamePage = BaseUrl + "/games/" + pid + "/---";
+        partyId = jsonData.value("PartyId", "");
+		smallText = jsonData.value("Username", "") + " " + "(" + uid + ")";
+        stateText = "Playing " + std::to_string(jsonData.value("Year", 0));
+        detailsText = jsonData.value("Name", "");
+        //links
+        userHeadshot = BaseUrl + "/Thumbs/Avatar-Headshot.ashx?userId=" + uid;
+
+        joinGame = BaseUrl + "/joinserver?jobId=" + serverInfo.jobId + "&placeId=" + pid;
+        gameIcon = BaseUrl + "Thumbs/GameIcon.ashx?assetId=" + pid;
+        gamePage = BaseUrl + "/games/" + pid + "/---";
 
         discordPresence.state = stateText.c_str();
         discordPresence.details = detailsText.c_str();
